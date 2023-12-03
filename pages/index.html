@@ -46,6 +46,8 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="/images/waterfall.jpeg" class="d-block w-100" alt="one of many shenandoah waterfalls">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
           </div>
           <div class="carousel-item">
             <img src="/images/oldrag.jpeg" class="d-block w-100" alt="old rag lookout point">
@@ -107,13 +109,35 @@
         <a class="impact-btn btn3"><i class="fa-solid fa-tree fa-lg" style="color: rgb(255, 140, 0)"></i>Money Donated</a>
       </div>
       <div class="impact-box">
-        <h1 id="stats-title">What You Should Know About Us</h1>
+        <h1 style="padding-bottom: 1rem;">What Should You Know About Us?</h1>
+        <h1 id="stats-title"></h1>
       </div>
     </div>
     </section>
-    <form action="">
+    
+    <!-- Quote Section -->
+    <section class="section quote">
+      <div class="img-overlay"></div>
+    </section>
 
-    </form>
-
+    <!-- Newsletter -->
+    <section class="form">
+      <div>
+      <h1>Trail-Mail Newsletter</h1>
+      <p>Stay connected with the our monthly newsletter and get involved with your Shenandoah Trails.</p>
+    </div>
+      <form action="submit" id="form">
+        <span>
+          <label for="name">First Name<input type="text"></label>
+        </span>
+        <span>
+          <label for="name">Last Name<input type="text"></label>
+        </span>
+        <span>
+          <label for="email">Email Address<input type="text"></label>
+        </span>
+        <button id="submit">submit</button>
+      </form>
+    </section>
   </body>
 </html>
