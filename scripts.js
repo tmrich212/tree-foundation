@@ -19,12 +19,30 @@ btn3.addEventListener('click', () => {
 })
 
 const submit = document.querySelector('#submit');
-const input = 
+const form = document.querySelector('#form')
 
-submit.addEventListener('click', submitClick, false);
+
+submit.addEventListener('click', submitClick);
 
 function submitClick(event){
-    submit.innerHTML = "Thank you for signing up :)"
-    submit.style.backgroundColor = 'orange'
-    event.preventDefault()
+    form.innerHTML = '<h3 class="animate__animated animate__fadeInDown" style="text-align: center; background-color: #42792594; padding: 15px">Thank you for subscribing to us :)</h3>'
+}
+
+const quote = document.querySelector('.quotes');
+
+const arrayQuote = ['<h3>I volunteer with Shenandoah Trails because restoration will help with land erosion, climate change, and promote balance with nature.</h3><p>-- J. Anderson</p>', '<h3></h3>', '<h3></h3>'];
+
+const leftBtn = document.querySelector('#changeLeft')
+const rightBtn = document.querySelector('#changeRight')
+
+function leftClick(event){
+
+}
+
+leftBtn.addEventListener('click', () => {
+    quote.innerHTML = arrayQuote[0];
+})
+
+function rightClick(event){
+    quote
 }
